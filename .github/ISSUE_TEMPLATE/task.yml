@@ -1,0 +1,41 @@
+name: Task
+description: Describe a generic task, something that has to be done which is neither a bug nor a new feature.
+title: "task: <insert a descriptive title here>"
+type: Task
+
+body:
+- type: textarea
+  attributes:
+    label: "Description:"
+    description: >
+      A clear and concise description, describing what needs to be done.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: "Implementation steps:"
+    description: >
+      List out steps needed to complete this task.
+    placeholder: |
+      1. Implement X
+      2. Refactor Y
+      3. Add unit tests
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: "Dependencies:"
+    description: >
+      List any dependencies required to complete this task.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: "Additional notes:"
+    description: >
+      Any other relevant information.
+  validations:
+    required: false

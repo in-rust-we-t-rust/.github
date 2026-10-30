@@ -1,0 +1,29 @@
+name: Feature Request
+description: Request a new feature which has yet to be implemented inside the codebase.
+title: "feat: <insert a descriptive title here>"
+type: Feature
+
+body:
+- type: textarea
+  attributes:
+    label: "Description:"
+    description: >
+      A clear and concise description, giving the context and the requirements.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: "Possible implementation:"
+    description: >
+      Write the possible implementation of the feature.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: "Possible issues:"
+    description: >
+      Describe any problems that may be encountered or expected to arise during development.
+  validations:
+    required: true

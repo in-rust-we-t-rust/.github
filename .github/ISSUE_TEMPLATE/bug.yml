@@ -1,0 +1,70 @@
+name: Bug Report
+description: Describe a bug in the code that need to be fixed.
+title: "bug: <insert a descriptive title here>"
+labels: ["bug"]
+type: Bug
+
+body:
+- type: textarea
+  attributes:
+    label: "Description:"
+    description: >
+      A clear and concise description of the bug.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: "Steps to Reproduce:"
+    description: >
+      Steps to reproduce the behavior.
+    placeholder: |
+      1. Go to '...'
+      2. Click on '...'
+      3. Scroll down to '...'
+      4. See error
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: "Expected Behavior:"
+    description: >
+      What should happen instead?
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: "Actual Behavior:"
+    description: >
+      What actually happens?
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: "Environment:"
+    description: >
+      Information about your running environment.
+    placeholder: |
+      - OS: [e.g. Linux, macOS, Windows]
+      - Version: [e.g. v1.2.3]
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: "Logs & Screenshots:"
+    description: >
+      Provide any relevant logs or screenshots.
+  validations:
+    required: false
+
+- type: textarea
+  attributes:
+    label: "Additional Context"
+    description: >
+      Any other information that might help.
+  validations:
+    required: false
